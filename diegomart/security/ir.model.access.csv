@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_diegomart_kelompokbarang,access.diegomart.kelompokbarang,model_diegomart_kelompokbarang,,1,1,1,1
+access_diegomart_barang,access.diegomart.barang,model_diegomart_barang,,1,1,1,1
+access_diegomart_person,access.diegomart.person,model_diegomart_person,,1,1,1,1
+access_diegomart_kasir,access.diegomart.kasir,model_diegomart_kasir,,1,1,1,1
+access_diegomart_cleaningservice,access.diegomart.cleaningservice,model_diegomart_cleaningservice,,1,1,1,1
+access_diegomart_supplier,access.diegomart.supplier,model_diegomart_supplier,,1,1,1,1
+access_diegomart_penjualan,access.diegomart.penjualan,model_diegomart_penjualan,,1,1,1,1
+access_diegomart_detailpenjualan,access.diegomart.detailpenjualan,model_diegomart_detailpenjualan,,1,1,1,1
+access_diegomart_barangdatang,access.diegomart.barangdatang,model_diegomart_barangdatang,,1,1,1,1

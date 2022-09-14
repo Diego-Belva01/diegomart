@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- diegomart.kelompokbarang tree view -->
+    <record id="diegomart_kelompokbarang_view_tree" model="ir.ui.view">
+        <field name="name">diegomart.kelompokbarang.view.tree</field>
+        <field name="model">diegomart.kelompokbarang</field>
+        <field name="arch" type="xml">
+            <tree>
+             <field name="name"/>
+             <field name="kode_kelompok"/>
+             <field name="kode_rak"/>
+             <field name="jml_item" />
+             <field name="daftar" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- diegomart.kelompokbarang form view -->
+    <record id="diegomart_kelompokbarang_view_form" model="ir.ui.view">
+        <field name="name">diegomart.kelompokbarang.view.form</field>
+        <field name="model">diegomart.kelompokbarang</field>
+        <field name="arch" type="xml">
+            <form string="Kelompok Barang">
+                <sheet>
+                    <group name="Kelompok" string="Letak Kelompok">
+                        <field name="name" required="1"/>
+                        <field name="kode_kelompok"/>                      
+                    </group>
+                    <group name="Rak" string="Letak Barang">
+                        <field name="kode_rak"/>
+                        <field name="barang_id"/> 
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- diegomart.kelompokbarang action window -->
+    <record id="diegomart_kelompokbarang_action" model="ir.actions.act_window">
+        <field name="name">Kelompok Roti</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">diegomart.kelompokbarang</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="diegomart_kelompokbarang_menu_act" 
+              name="Kelompok Barang" 
+              parent="diegomart_barang_menu_categ" 
+              action="diegomart_kelompokbarang_action" 
+              sequence="10"/>
+
+</odoo>
